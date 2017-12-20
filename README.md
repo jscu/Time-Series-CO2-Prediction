@@ -17,7 +17,7 @@ Concentrations of CO2 in the Earth's atmosphere (parts per million) derived from
 The Seasonal ARIMA Model fit to the training data has a mean squared error of 1.3 parts per million (ppm) for the predictions on the test data from 2010 to 2014. Also, 96% of the test data falls within the 95% prediction bounds of the model.
 
 <p align="center">
-  <img src="monthlyCO2_predict.png">
+  <img src="monthlyCO2_prediction.png">
 </p>
 
 
