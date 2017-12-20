@@ -150,12 +150,12 @@ McLeod.Li.test(y = (fit$resid), main = 'McLeod-Li test for the residuals of SARI
 ########################################################
 
 # Plot and save the predicted and actual data
-png('monthlyCO2_predict.png',width = 580, height = 480 )
+png('monthlyCO2_prediction.png',width = 580, height = 480 )
 val <- plot(fit, n1 = c(2000, 12), n.ahead = 57, xlab = 'Year', type = 'o', ylab = 'CO2 Levels(ppm)',main = 'Forecast of the monthly CO2 level')
 points(test, col = 'red', pch = 16, cex = 0.8)
 legend(2010, 380, c('95% prediction bounds'), lty = c('dotted'), bty = 'n')
 legend(2010.7, 376, 'Predicted value', pch  = 1, bty = 'n')
-legend(2010.5, 372, 'Actual value', fill = 'red', bty = 'n')
+legend(2010.7, 372, 'Actual value', pch  = 16, col = 'red', bty = 'n')
 dev.off()
 
 # Calculate the percentage of actual values that fall within the 95% prediction limits
